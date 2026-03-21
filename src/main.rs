@@ -13,7 +13,7 @@ use std::path::{Path, PathBuf};
 #[command(
     name = "sunmap",
     version,
-    about = "Rebuild JavaScript projects from sourcemaps",
+    about = "Reconstruct JavaScript projects from sourcemaps.\nAuthor: Angelo DeLuca",
     long_about = None
 )]
 pub struct Cli {
