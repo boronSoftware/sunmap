@@ -32,26 +32,10 @@ impl<'a> Module<'a> {
 
         for (p, _) in self.normalized_path_iterator() {
             let path = Path::new(p);
-            // let mut stack = vec![];
-            // let mut parent_index = 0;
             let mut normals = 0usize;
             let mut escapes = 0usize;
 
             for piece in path.components() {
-                // match piece {
-                //     Component::ParentDir
-                //         if matches!(stack.last(), Some(Component::ParentDir))
-                //             || stack.is_empty() =>
-                //     {
-                //         stack.push(Component::ParentDir);
-                //         parent_index += 1;
-                //     }
-                //     Component::ParentDir => {
-                //         stack.pop();
-                //     }
-                //     _ => stack.push(piece),
-                // }
-
                 match piece {
                     Component::Normal(_) => normals += 1,
                     Component::ParentDir => {
