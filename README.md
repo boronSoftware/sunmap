@@ -7,7 +7,7 @@ This tool will handle such cases by analyzing all paths, and then creating a bas
 
 ## Usage
 ```sh
-sunmap --source-map path/to/sourcemap.js.map --out-dir ./project
+sunmap rebuild --source-map path/to/sourcemap.js.map --out-dir ./project
 # or
-sunmap --source-map-dir directory/of/sourcemaps --recursive --out-dir ./project
+sunmap rebuild --source-map-dir directory/of/sourcemaps --recursive --out-dir ./project
 ```
